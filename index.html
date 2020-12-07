@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="dem" onclick="myFunction()">Click me to change text color</p>
+    <script>
+      function myFunction(){document.getElementById("dem").style.color="purple";}
+      </script>
+      <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+<p>Click anywhere in this window to change the background color of body.</p>
+<script>
+window.onclick = iFunction;
+function iFunction() {
+  document.getElementsByTagName("BODY")[0].style.backgroundColor = "pink";
+}
+</script>
+<style>
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: white;
+  margin-top: 20px;
+}
+</style>
+<button onclick="aFunction()">Try it</button>
+<div id="myDIV">
+This is my DIV element.
+</div>
+<script>
+function aFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+<script>
+  </script>
+  <p id="demo" onclick="bFunction()"> Click me to change.</p>
+<script>
+function bFunction() {
+  document.getElementById("demo").style.color = "blue";
+  document.getElementById("demo").style.fontSize= "30px";
+  document.getElementById("demo").style.font = "Comic Sans MS";
+}
+</script>
+  </body>
+</html>
